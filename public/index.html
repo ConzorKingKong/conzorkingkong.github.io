@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Connor Peshek - Web Developer</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta property="og:title" content="Connor Peshek - Web Developer">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="Connor Peshek's Personal Site">
+  <meta name="description" content="Connor Peshek's Personal Site">
+  <link rel="stylesheet" type="text/css" href="./fonts.css">
+  <link rel="stylesheet" type="text/css" href="./main.css">
+</head>
+
+<body>
+  <main data-flow="column">
+    <div data-flow="column">
+      <h1>Connor</h1>
+      <h1>Peshek</h1>
+      <p class="subtitle">Web Dev</p>
+    </div>
+    <p class="icon">↓</p>
+  </main>
+  <div class="slide" data-slide="profile">
+    <div class="description">I'm a web dev that mainly focuses on front-end, but has some back-end experience as well. I
+      spend all the rest of my time playing bass and practicing vocals. A handful of projects I've worked on include
+    </div>
+    <div class="preview"><img class="me-img" src="./img/me.png"></div>
+  </div>
+  <div class="slide" data-flow="column" data-slide="alarm-clock">
+    <header class="title">Alarm Clock</header>
+    <div class="details">
+      <div class="description">This is an alarm clock app. You can sign up and save alarm times to your user. It was
+        built with React, Golang, and Docker. It is set up with automatic deployment and testing with a CI/CD pipeline
+        in Gitlab<a href="https://clock.connorpeshek.me">Check it out here!</a></div>
+      <div class="preview"><img class="img" src="./img/clock.png"></div>
+    </div>
+  </div>
+  <div class="slide" data-flow="column" data-slide="hacker-news">
+    <header class="title">Hacker News</header>
+    <div class="details">
+      <div class="description">Hacker News is a React-Redux front-end for the Hacker News API. This project uses the
+        Redux Thunk and Promise middlewares. It uses infinite scrolling to paginate and has a search feature built in.<a
+          href="https://hn.connorpeshek.me">Check it out here!</a></div>
+      <div class="preview"><img class="img" src="./img/hackernews.png"></div>
+    </div>
+  </div>
+  <div class="slide" data-flow="column" data-slide="tweet-this">
+    <header class="title">Tweet This!</header>
+    <div class="details reverse">
+      <div class="description">Tweet This! allows visitors to highlight any text on a website and immeditly Tweet about
+        it. I made it for the Eager marketplace. It's currently running on this site, try it now!</div>
+      <div class="preview"><img class="img" src="./img/tweetthis.png"></div>
+    </div>
+  </div>
+  <div class="slide" data-flow="column" data-slide="contact">
+    <h1>Contact me</h1>
+    <div class="details">
+      <a class="github" href="https://www.github.com/conzorkingkong" target="_blank">github</a>
+      <a class="twitter" href="https://www.twitter.com/conzorkingkong"  target="_blank">twitter</a>
+      <a class="email" href="mailto:connor@connorpeshek.me"  target="_blank">email</a>
+    </div>
+  </div>
+</body>
+
+</html>

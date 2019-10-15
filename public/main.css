@@ -1,0 +1,317 @@
+[data-status="materialize"] {
+  animation: materialize 800ms;
+  animation-fill-mode: forwards;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+body {
+  overflow-y: scroll;
+  font-size: 16px;
+  margin: 0px;
+}
+
+svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+div,
+footer,
+header,
+main,
+section {
+  display: flex;
+}
+
+[data-flow="column"] {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+[data-flow="column-reverse"] {
+  display: flex;
+  flex-flow: column-reverse nowrap;
+}
+
+main {
+  height: 100vh;
+  text-align: center;
+  font-family: 'bungee shade', cursive;
+  color: #fff;
+  background-color: #000;
+  font-size: 4em;
+  justify-content: space-between;
+}
+
+main h1 {
+  margin: 0 0 0 0;
+}
+
+.subtitle {
+  margin: 0;
+}
+
+.icon {
+  margin-bottom: 0;
+}
+
+[data-slide] {
+  height: 100vh;
+  background: #efefef;
+  justify-content: space-between;
+}
+
+[data-slide] .title {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  justify-content: center;
+  font-family: 'bungee shade', cursive;
+  font-size: 3em;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+[data-slide] .details {
+  flex-grow: 1;
+  background: #efefef;
+  align-items: center;
+  flex-direction: row;
+}
+
+[data-slide] .description {
+  width: 33%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  font-family: Avenir, "Avenir Next", "Segoe UI", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 1.2em;
+}
+
+[data-slide] .description a {
+  text-decoration: none;
+}
+
+[data-slide] .preview {
+  width: 66%;
+  justify-content: center;
+  align-items: center;
+}
+
+[data-slide="profile"] {
+  flex-direction: row-reverse;
+}
+
+[data-slide="hacker-news"] .details {
+  flex-direction: row-reverse;
+}
+
+[data-slide="cover-message"] .details {
+  flex-direction: row-reverse;
+}
+
+[data-slide="contact"] {
+  font-family: 'bungee shade', cursive;
+  background-color: #000;
+  color: #fff;
+  align-items: center;
+}
+
+[data-slide="contact"] h1 {
+  font-size: 10vh;
+}
+
+[data-slide="contact"] .details {
+  flex-grow: 0;
+  background-color: #000;
+  font-family: 'bungee shade', cursive;
+  justify-content: space-between;
+  width: 80%;
+  margin-bottom: 3vh;
+}
+
+[data-slide="contact"] a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.img {
+  width: 35em;
+}
+
+.me-img {
+  height: 30.2em;
+}
+
+@media (max-width: 925px) {
+  main div {
+    margin-top: 50%;
+    font-size: 0.4em;
+  }
+
+  header {
+    text-align: center;
+  }
+  
+  [data-slide] .title {
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
+  }
+
+  [data-slide] .description {
+    flex-grow: 1;
+    width: auto;
+  }
+
+  [data-slide] .preview {
+    width: auto;
+  }
+
+  .details {
+    justify-content: flex-end;
+  }
+
+  .me-img {
+    height: 23em;
+  }
+
+  .img {
+    width: 100%;
+  }
+
+  [data-slide="profile"] {
+    flex-direction: column;
+  }
+
+  [data-slide="alarm-clock"] .details {
+    flex-direction: column-reverse;
+  }
+
+  [data-slide="hacker-news"] .details {
+    flex-direction: column-reverse;
+  }
+
+  [data-slide="tweet-this"] .details {
+    flex-direction: column-reverse;
+  }
+
+  [data-slide="contact"] h1 {
+    text-align: center;
+  }
+}
+
+@-moz-keyframes materialize {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0.2;
+  }
+
+  40% {
+    opacity: 0.4;
+  }
+
+  60% {
+    opacity: 0.6;
+  }
+
+  80% {
+    opacity: 0.8;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes materialize {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0.2;
+  }
+
+  40% {
+    opacity: 0.4;
+  }
+
+  60% {
+    opacity: 0.6;
+  }
+
+  80% {
+    opacity: 0.8;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes materialize {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0.2;
+  }
+
+  40% {
+    opacity: 0.4;
+  }
+
+  60% {
+    opacity: 0.6;
+  }
+
+  80% {
+    opacity: 0.8;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes materialize {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0.2;
+  }
+
+  40% {
+    opacity: 0.4;
+  }
+
+  60% {
+    opacity: 0.6;
+  }
+
+  80% {
+    opacity: 0.8;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

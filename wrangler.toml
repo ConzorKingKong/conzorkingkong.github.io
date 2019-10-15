@@ -1,0 +1,10 @@
+account_id = ""
+name = "personal-page"
+type = "webpack"
+route = "connorpeshek.me/*"
+workers_dev = false
+zone_id = ""
+
+[site]
+bucket = "./public"
+entry-point = "workers-site"
